@@ -6,7 +6,7 @@
 
     <groupId>io.github.joe-mcverry</groupId>
     <artifactId>scrollingarray</artifactId>
-    <version>1.0.7</version>
+    <version>1.0.8</version>
     <packaging>jar</packaging>
 
     <name>ScrollingArray</name>
@@ -57,7 +57,7 @@
                 <version>3.13.0</version>
             </plugin>
 
-            <!-- Sources JAR (required by Maven Central) -->
+            <!-- Sources JAR (required) -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-source-plugin</artifactId>
@@ -72,7 +72,7 @@
                 </executions>
             </plugin>
 
-            <!-- Javadoc JAR (required by Maven Central) -->
+            <!-- Javadoc JAR (required) -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
