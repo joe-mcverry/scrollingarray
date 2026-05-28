@@ -41,4 +41,4 @@ jobs:
           EOF
 
       - name: Publish to Maven Central
-        run: mvn clean deploy -e --no-transfer-progress
+        run: mvn clean deploy -X --no-transfer-progress
