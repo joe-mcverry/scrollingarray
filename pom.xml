@@ -57,6 +57,7 @@
                 <version>3.13.0</version>
             </plugin>
 
+            <!-- Central Publishing for GitHub Actions (no server ID needed) -->
             <plugin>
                 <groupId>org.sonatype.central</groupId>
                 <artifactId>central-publishing-maven-plugin</artifactId>
