@@ -57,16 +57,13 @@
                 <version>3.13.0</version>
             </plugin>
 
-            <!-- Central Publishing (no GPG needed) -->
+            <!-- Central Publishing (Trusted Publishing - no server ID needed) -->
             <plugin>
                 <groupId>org.sonatype.central</groupId>
                 <artifactId>central-publishing-maven-plugin</artifactId>
                 <version>0.10.0</version>
                 <extensions>true</extensions>
-                <configuration>
-                    <publishingServerId>central</publishingServerId>
-                    <autoPublish>true</autoPublish>
-                </configuration>
+                <!-- NO publishingServerId line here -->
             </plugin>
 
             <plugin>
