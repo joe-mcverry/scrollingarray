@@ -57,88 +57,11 @@
                 <version>3.13.0</version>
             </plugin>
 
-            <!-- Central Publishing - Trusted Publishing (NO server ID) -->
             <plugin>
                 <groupId>org.sonatype.central</groupId>
                 <artifactId>central-publishing-maven-plugin</artifactId>
                 <version>0.10.0</version>
                 <extensions>true</extensions>
-                <!-- NO publishingServerId line - this is required for GitHub Actions -->
-            </plugin>
-
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.5.5</version>
-            </plugin>
-        </plugins>
-    </build>
-</project><?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-
-    <groupId>io.github.joe-mcverry</groupId>
-    <artifactId>scrollingarray</artifactId>
-    <version>1.0.2</version>
-    <packaging>jar</packaging>
-
-    <name>ScrollingArray</name>
-    <description>A utility library for accessing arrays using different combinatorial scrolling patterns.</description>
-    <url>https://github.com/joe-mcverry/scrollingarray</url>
-
-    <licenses>
-        <license>
-            <name>Apache License, Version 2.0</name>
-            <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
-            <distribution>repo</distribution>
-        </license>
-    </licenses>
-
-    <developers>
-        <developer>
-            <id>joe-mcverry</id>
-            <name>Joe McVerry</name>
-            <url>https://github.com/joe-mcverry</url>
-        </developer>
-    </developers>
-
-    <scm>
-        <connection>scm:git:git://github.com/joe-mcverry/scrollingarray.git</connection>
-        <developerConnection>scm:git:git@github.com:joe-mcverry/scrollingarray.git</developerConnection>
-        <url>https://github.com/joe-mcverry/scrollingarray</url>
-    </scm>
-
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.release>21</maven.compiler.release>
-    </properties>
-
-    <dependencies>
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter</artifactId>
-            <version>5.14.4</version>
-            <scope>test</scope>
-        </dependency>
-    </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.13.0</version>
-            </plugin>
-
-            <!-- Central Publishing (Trusted Publishing - no server ID needed) -->
-            <plugin>
-                <groupId>org.sonatype.central</groupId>
-                <artifactId>central-publishing-maven-plugin</artifactId>
-                <version>0.10.0</version>
-                <extensions>true</extensions>
-                <!-- NO publishingServerId line here -->
             </plugin>
 
             <plugin>
