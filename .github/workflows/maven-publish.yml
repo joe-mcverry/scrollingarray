@@ -23,4 +23,4 @@ jobs:
           cache: 'maven'
 
       - name: Publish to Maven Central
-        run: mvn clean deploy -P release --no-transfer-progress
+        run: mvn clean deploy --no-transfer-progress
